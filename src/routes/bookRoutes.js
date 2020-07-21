@@ -7,6 +7,11 @@ const bookRouter = express.Router();
 const debug = require('debug')('app:bookRoutes');
 
 const router = (nav) => {
+  //Authorization check
+  bookRouter.use((req, res, next) => {
+    req.user ? next() : res.redirect('/');
+  })
+  //
   bookRouter.route("/").get((req, res) => {
     const url = "mongodb://localhost:27017";
     const dbName = "libraryApp";

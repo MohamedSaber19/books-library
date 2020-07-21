@@ -96,7 +96,7 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-.navbar-bright li > a:hover {
+.navbar-bright li>a:hover {
   background-color: #000044;
 }
 
@@ -147,6 +147,24 @@ a:hover {
   overflow: hidden;
   height: 90px;
 }
+
+.form input {
+  display: block;
+  margin-bottom: .5rem
+}
+
+.form label {
+  margin-bottom: 0;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  background: #fff;
+  padding: 4px 8px;
+  border: 1px solid #646464;
+  border-radius: 5px;
+}
+
 
 .label-float {
   margin: 0 auto;
@@ -305,7 +323,7 @@ a:hover {
   letter-spacing: 0.08em;
 }
 
-.navbar-bright li > a:hover {
+.navbar-bright li>a:hover {
   background-color: #000044;
 }
 

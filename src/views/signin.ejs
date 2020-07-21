@@ -42,7 +42,15 @@
                     <div class="well well-lg">
                         <div class="row">
                             <div class="col-sm-12">
-
+                                <!-- <div class="container">
+                        <br>
+                        <h4>Sign up!</h4>
+                        <form name="signUpForm" action="/auth/signup" method="post">
+                            Username: <input name="username" id="username"/><br>
+                            Password: <input name="password" id="password"/><br>
+                            <input type="submit" value="Sign Up"/>
+                        </form>
+                        </div> -->
 
                             </div>
                         </div>
@@ -62,33 +70,24 @@
                     <div class="panel">
                         <div class="panel-body">
 
-
+                            <!--/stories-->
                             <div class="row">
                                 <br>
-                                <div class="col-md-2 col-sm-3 text-center">
-                                    <a class="story-title" href="#"><img alt=""
-                                            src="http://api.randomuser.me/portraits/thumb/men/58.jpg"
-                                            style="width:100px;height:100px" class="img-circle"></a>
-                                </div>
-                                <div class="col-md-10 col-sm-9">
-                                    <h3><%=book.title%></h3>
-                                    <div class="row" style="margin:0">
-                                        <div class="col-xs-9">
-                                            <h6><span class="label label-default"><%=book.author%></span></h6>
-                                            <p>
-                                                <small style="font-family:courier,'new courier';"
-                                                    class="d-block text-muted"><%=book.genre%>
-                                                </small>
-
-                                            </p>
+                                <div class="col-md-2 col-sm-3 ">
+                                    <h4>Sign In! </h4>
+                                    <form class="form" name="signInForm" action="/auth/signin" method="post">
+                                        <div>
+                                            <label>Username: </label>
+                                            <input name="username" id="username" />
                                         </div>
-                                        <div class="col-xs-3"></div>
-                                    </div>
-                                    <br><br>
+                                        <div>
+                                            <label>Password:</label>
+                                            <input name="password" id="password" />
+                                        </div>
+                                        <input class="submit-btn" type="submit" value="Sign In" />
+                                    </form>
                                 </div>
                             </div>
-                            <hr>
-
 
                         </div>
                     </div>
@@ -101,7 +100,7 @@
         </div>
 
 
-
+        <hr>
 
         <div class="container" id="footer">
             <div class="row">
@@ -119,26 +118,6 @@
                 </div>
             </div>
         </div>
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <ul class="list-inline">
-                            <li><i class="icon-facebook icon-2x"></i></li>
-                            <li><i class="icon-twitter icon-2x"></i></li>
-                            <li><i class="icon-google-plus icon-2x"></i></li>
-                            <li><i class="icon-pinterest icon-2x"></i></li>
-                        </ul>
-
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a
-                                href="http://www.bootply.com">Bootply</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
 
         <script src="/js/jquery.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
